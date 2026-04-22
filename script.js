@@ -13,7 +13,7 @@ const quizData = [
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "Misleading Context",
         evidence: "The photo is real, but the context is fake. This is the 2011 Tohoku tsunami being used to trick people during modern storms.",
-        img: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Japan_Tsunami_2011_Port_of_Miyako.jpg"
+        img: "https://eclipse23.com/cdn/shop/articles/what-we-learned-from-the-2011-tohoku-earthquake-and-tsunami-265801.jpg?v=1730348775"
     },
     {
         title: "The Afghan Girl",
