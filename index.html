@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Media-Literacy AI Art Gallery</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can You Spot AI? | Media Literacy Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-<h1>Media-Literacy AI Art Gallery</h1>
-<p>Learning how to verify suspicious images in the age of AI.</p>
-</header>
+    <header>
+        <nav class="container">
+            <div class="logo">Spot<span>AI</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#verify">Verification</a></li>
+                <li><a href="#gallery">Gallery Quiz</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#room1">Room 1</a>
-<a href="#room2">Room 2</a>
-<a href="#room3">Room 3</a>
-<a href="#quiz">Quiz</a>
-</nav>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Can You Spot AI?</h1>
+                <p class="subtitle">Learn how to verify suspicious images in the age of AI</p>
+                <div class="hero-content">
+                    <p>In a world of deepfakes and AI-generated art, seeing is no longer believing. This gallery is designed to help you build the "mental muscle" needed to distinguish between reality, AI, and intentional misinformation.</p>
+                </div>
+            </div>
+        </section>
 
-<section id="home">
-<h2>Welcome</h2>
-<p>
-This gallery teaches visitors how to evaluate AI-generated and manipulated images using a 5-step method:
-Stop → Context → Provenance → Cross-check → Decide.
-</p>
-</section>
+        <section id="verify" class="methodology container">
+            <h2 class="section-title">The 5-Step Verification Method</h2>
+            <div class="method-grid">
+                <div class="method-card"><h3>1. Stop</h3><p>If a photo triggers a strong emotion, pause before sharing.</p></div>
+                <div class="method-card"><h3>2. Context</h3><p>Check the source. Who posted this and why?</p></div>
+                <div class="method-card"><h3>3. Provenance</h3><p>Find the original. Is this the oldest version of the image?</p></div>
+                <div class="method-card"><h3>4. Cross-check</h3><p>Are reputable news outlets reporting the same thing?</p></div>
+                <div class="method-card"><h3>5. Decide</h3><p>Only share if you are certain the image is authentic and true.</p></div>
+            </div>
+        </section>
 
-<section id="room1">
-<h2>Room 1: Spot the Manipulation</h2>
-<div class="card">
-<h3>Fake Protest Image</h3>
-<p>Look for strange hands, repeated faces, impossible shadows, or emotional framing.</p>
-</div>
-</section>
+        <section id="gallery" class="quiz-section container">
+            <h2 class="section-title">AI Art Gallery Quiz</h2>
+            <p class="quiz-intro">Examine the evidence. Choose the correct label for each piece.</p>
+            
+            <div id="quiz-container" class="gallery-grid">
+                </div>
 
-<section id="room2">
-<h2>Room 2: Provenance Trail</h2>
-<div class="card">
-<h3>Missing Source</h3>
-<p>If no trustworthy source exists, be cautious. Ask where the image came from.</p>
-</div>
-</section>
+            <div id="final-results" class="results-card hidden">
+                <h3>Your Final Score</h3>
+                <div class="score-display"><span id="score-num">0</span> / 9</div>
+                <p id="score-message"></p>
+                <button onclick="location.reload()" class="btn-primary">Try Again</button>
+            </div>
+        </section>
 
-<section id="room3">
-<h2>Room 3: Detection Reality Check</h2>
-<div class="card">
-<h3>AI Detector Limits</h3>
-<p>Detection tools can help, but they cannot guarantee truth.</p>
-</div>
-</section>
+        <section id="resources" class="resources container">
+            <h2 class="section-title">Essential Resources</h2>
+            <div class="resource-links">
+                <a href="https://www.unesco.org/en/media-information-literacy" target="_blank">UNESCO Media Literacy</a>
+                <a href="https://contentauthenticity.org/" target="_blank">Content Credentials (CAI)</a>
+                <a href="https://tineye.com/" target="_blank">TinEye Reverse Search</a>
+                <a href="https://www.factcheck.org/" target="_blank">FactCheck.org</a>
+            </div>
+        </section>
+    </main>
 
-<section id="quiz">
-<h2>Quick Quiz</h2>
-<p><strong>Question:</strong> Is visual appearance alone enough to prove an image is fake?</p>
-<button onclick="alert('Correct answer: No. You must also check source and context.')">Show Answer</button>
-</section>
+    <footer>
+        <p>&copy; 2024 Media Literacy School Project. Designed for Education.</p>
+    </footer>
 
-<footer>
-<p>Created for Unit 2: Generative AI Art Gallery</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
