@@ -3,74 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Can You Spot AI? | Media Literacy Gallery</title>
+    <title>Spot AI | Advanced Media Literacy</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav class="container">
-            <div class="logo">Spot<span>AI</span></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#verify">Verification</a></li>
-                <li><a href="#gallery">Gallery Quiz</a></li>
-                <li><a href="#resources">Resources</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">SPOT<span>AI</span></div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#guide">Methodology</a>
+                <a href="#quiz">Gallery</a>
+                <a href="#resources">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Media Literacy 2.0</span>
+                <h1>Truth in the <br><em>Age of Synthesis</em></h1>
+                <p>Welcome to the digital frontier. As AI blurs the line between captured reality and generated fiction, your ability to verify is your most powerful tool.</p>
+                <div class="hero-btns">
+                    <a href="#quiz" class="btn-primary">Enter Gallery</a>
+                    <a href="#guide" class="btn-secondary">Learn the Method</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Can You Spot AI?</h1>
-                <p class="subtitle">Learn how to verify suspicious images in the age of AI</p>
-                <div class="hero-content">
-                    <p>In a world of deepfakes and AI-generated art, seeing is no longer believing. This gallery is designed to help you build the "mental muscle" needed to distinguish between reality, AI, and intentional misinformation.</p>
-                </div>
+    <div id="progress-container" class="progress-bar-wrap">
+        <div class="container">
+            <div class="progress-info">
+                <span>Gallery Progress</span>
+                <span id="progress-text">0/9 Examined</span>
             </div>
-        </section>
+            <div class="progress-bg"><div id="progress-fill"></div></div>
+        </div>
+    </div>
 
-        <section id="verify" class="methodology container">
-            <h2 class="section-title">The 5-Step Verification Method</h2>
-            <div class="method-grid">
-                <div class="method-card"><h3>1. Stop</h3><p>If a photo triggers a strong emotion, pause before sharing.</p></div>
-                <div class="method-card"><h3>2. Context</h3><p>Check the source. Who posted this and why?</p></div>
-                <div class="method-card"><h3>3. Provenance</h3><p>Find the original. Is this the oldest version of the image?</p></div>
-                <div class="method-card"><h3>4. Cross-check</h3><p>Are reputable news outlets reporting the same thing?</p></div>
-                <div class="method-card"><h3>5. Decide</h3><p>Only share if you are certain the image is authentic and true.</p></div>
+    <section id="guide" class="guide-section container">
+        <div class="section-header">
+            <h2>The Verification Framework</h2>
+            <p>Professional fact-checkers use the **S.I.F.T.** and **C.P.C.D.** methods. Here is your toolkit:</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card"><span>01</span><h3>Stop</h3><p>Check your emotional bias before interacting.</p></div>
+            <div class="step-card"><span>02</span><h3>Context</h3><p>Investigate the original source of the file.</p></div>
+            <div class="step-card"><span>03</span><h3>Provenance</h3><p>Look for technical metadata or AI 'watermarks'.</p></div>
+            <div class="step-card"><span>04</span><h3>Cross-Check</h3><p>Search for the same image on trusted news wires.</p></div>
+            <div class="step-card"><span>05</span><h3>Decide</h3><p>Verify or debunk based on the evidence found.</p></div>
+        </div>
+    </section>
+
+    <section id="quiz" class="gallery-section container">
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All Exhibits</button>
+        </div>
+        <div id="gallery-grid" class="gallery-grid">
             </div>
-        </section>
+    </section>
 
-        <section id="gallery" class="quiz-section container">
-            <h2 class="section-title">AI Art Gallery Quiz</h2>
-            <p class="quiz-intro">Examine the evidence. Choose the correct label for each piece.</p>
-            
-            <div id="quiz-container" class="gallery-grid">
-                </div>
+    <div id="results-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Gallery Assessment Complete</h2>
+            <div class="final-score" id="final-score-val">0</div>
+            <p id="final-message"></p>
+            <button onclick="window.location.reload()" class="btn-primary">Restart Experience</button>
+        </div>
+    </div>
 
-            <div id="final-results" class="results-card hidden">
-                <h3>Your Final Score</h3>
-                <div class="score-display"><span id="score-num">0</span> / 9</div>
-                <p id="score-message"></p>
-                <button onclick="location.reload()" class="btn-primary">Try Again</button>
+    <footer id="resources" class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo">SPOT<span>AI</span></div>
+                <p>An educational initiative for media literacy in secondary schools.</p>
             </div>
-        </section>
-
-        <section id="resources" class="resources container">
-            <h2 class="section-title">Essential Resources</h2>
-            <div class="resource-links">
-                <a href="https://www.unesco.org/en/media-information-literacy" target="_blank">UNESCO Media Literacy</a>
-                <a href="https://contentauthenticity.org/" target="_blank">Content Credentials (CAI)</a>
-                <a href="https://tineye.com/" target="_blank">TinEye Reverse Search</a>
-                <a href="https://www.factcheck.org/" target="_blank">FactCheck.org</a>
+            <div class="footer-links">
+                <h4>Tools</h4>
+                <a href="#">InVID Verification</a>
+                <a href="#">Google Lens</a>
+                <a href="#">FotoForensics</a>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Media Literacy School Project. Designed for Education.</p>
+            <div class="footer-links">
+                <h4>Standards</h4>
+                <a href="#">UNESCO MIL</a>
+                <a href="#">CAI Standards</a>
+                <a href="#">FactCheck.org</a>
+            </div>
+        </div>
+        <div class="copyright">Built for Education &copy; 2024</div>
     </footer>
 
     <script src="script.js"></script>
