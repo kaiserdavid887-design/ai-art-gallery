@@ -37,7 +37,7 @@ const quizData = [
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
         evidence: "Check the water surface. AI struggles to render the complex physics of splashing water and foam consistently.",
-        img: "https://images.unsplash.com/photo-1560273074-c930c70e1ad0?auto=format&fit=crop&q=80&w=600"
+        img: "https://images.unsplash.com/photo-1560273074-c930c70e1ad0?q=80&w=800"
     },
     {
         title: "Historic Peace Treaty",
@@ -45,7 +45,7 @@ const quizData = [
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "Real",
         evidence: "The damage on the negative (white spots) matches historical archiving patterns that AI rarely replicates accurately.",
-        img: "https://images.unsplash.com/photo-1526332663830-51a70059c193?auto=format&fit=crop&q=80&w=600"
+        img: "https://images.unsplash.com/photo-1526332663830-51a70059c193?q=80&w=800"
     },
     {
         title: "The Floating Market",
