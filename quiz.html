@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot AI | Gallery Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">SPOT<span>AI</span></div>
+            <div class="nav-links">
+                <a href="index.html">Learn</a>
+                <a href="quiz.html" class="active">Take the Quiz</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="progress-container" class="progress-bar-wrap">
+        <div class="container">
+            <div class="progress-info">
+                <span>Gallery Progress</span>
+                <span id="progress-text">0/9 Examined</span>
+            </div>
+            <div class="progress-bg"><div id="progress-fill"></div></div>
+        </div>
+    </div>
+
+    <section class="gallery-section container">
+        <div id="gallery-grid" class="gallery-grid">
+            </div>
+    </section>
+
+    <div id="results-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Assessment Complete</h2>
+            <div class="final-score" id="final-score-val">0</div>
+            <p id="final-message"></p>
+            <button onclick="location.href='index.html'" class="btn-primary">Back to Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
