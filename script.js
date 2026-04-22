@@ -1,75 +1,75 @@
 const quizData = [
     {
         title: "The Vatican Puffer",
-        scenario: "An image of the Pope wearing a stylish, oversized designer white puffer jacket.",
+        scenario: "The Pope wearing a designer white puffer jacket. Is this a rare candid moment?",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
-        evidence: "Look at the hands and the glasses—they blur into the face. This was a Midjourney creation that went viral in 2023.",
-        img: "https://images.unsplash.com/photo-1679083216051-aa510a1a2c0e?auto=format&fit=crop&q=80&w=600"
+        evidence: "This was created using Midjourney. Look at the blurry texture of the right hand and the impossible reflections on the glasses.",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Artificial_intelligence_pope_puffer_jacket.jpg/640px-Artificial_intelligence_pope_puffer_jacket.jpg"
     },
     {
         title: "2011 Japan Tsunami",
-        scenario: "A photo of a massive wave hitting a coastal city, shared during a recent 2024 storm.",
+        scenario: "A photo of a massive wave hitting a coastal city, shared as 'Live footage of a storm happening right now.'",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "Misleading Context",
-        evidence: "The photo is 100% real, but the context is wrong. It's 13 years old and being used to farm engagement during a new disaster.",
-        img: "https://images.unsplash.com/photo-1551219059-b5f8e7acee56?auto=format&fit=crop&q=80&w=600"
+        evidence: "The photo is real, but the context is fake. This is the 2011 Tohoku tsunami being used to trick people during modern storms.",
+        img: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Japan_Tsunami_2011_Port_of_Miyako.jpg"
     },
     {
-        title: "National Geographic Portrait",
-        scenario: "A high-contrast photo of a girl with piercing green eyes from a 1984 magazine cover.",
+        title: "The Afghan Girl",
+        scenario: "A 1984 portrait. Notice the sharp grain and the distinct reflections in the green eyes.",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "Real",
-        evidence: "This is the famous 'Afghan Girl' by Steve McCurry. High grain and period-correct film artifacts prove its authenticity.",
-        img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600"
+        evidence: "This is Steve McCurry's famous photograph. The 'noise' in the photo comes from 35mm film, which is different from AI 'blur.'",
+        img: "https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg"
     },
     {
-        title: "Cyber-Bicycle Design",
-        scenario: "A futuristic bicycle where the spokes of the wheels don't actually touch the center hub.",
+        title: "Cyber-Bicycle",
+        scenario: "A futuristic bicycle design where the wheels appear to be made of floating light.",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
-        evidence: "Structural impossibility. AI often 'dreams' objects that look cool but wouldn't function under physics.",
-        img: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&q=80&w=600"
+        evidence: "AI creates objects that look 'cool' but are physically impossible. There is no chain, pedal, or structural support shown.",
+        img: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=800"
     },
     {
         title: "The Deep-Sea Discovery",
-        scenario: "A photo of a giant 'Meglodon' shark supposedly caught by a fishing boat yesterday.",
+        scenario: "A massive shark found in a shallow river, supposedly caught by a local fisherman last week.",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
-        evidence: "Check the water surface. AI struggles to render the complex physics of splashing water and foam consistently.",
+        evidence: "Look at the water foam. AI often makes water look like 'cotton candy' or static rather than flowing liquid.",
         img: "https://images.unsplash.com/photo-1560273074-c930c70e1ad0?q=80&w=800"
     },
     {
-        title: "Historic Peace Treaty",
-        scenario: "A blurry black and white photo showing an event that took place in 1945.",
+        title: "Yalta Conference 1945",
+        scenario: "Churchill, Roosevelt, and Stalin sitting together. The image is black and white with physical scratches.",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "Real",
-        evidence: "The damage on the negative (white spots) matches historical archiving patterns that AI rarely replicates accurately.",
-        img: "https://images.unsplash.com/photo-1526332663830-51a70059c193?q=80&w=800"
+        evidence: "This is an authentic archival photo. AI struggles to replicate the specific chemical 'crackle' found in 80-year-old photos.",
+        img: "https://upload.wikimedia.org/wikipedia/commons/1/15/Yalta_Conference_1945_Yalta_Hotel.jpg"
     },
     {
         title: "The Floating Market",
-        scenario: "A stunning aerial view of a market where boats are shaped like giant lotus flowers.",
+        scenario: "An aerial view of a market where every single boat is a perfect lotus flower shape.",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
-        evidence: "Too perfect. The symmetry of the boats and the lack of any 'trash' or realistic clutter suggests AI generation.",
-        img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80&w=600"
+        evidence: "This is 'Mathematical Perfection.' Real markets are messy. AI likes to repeat patterns (the boats) too perfectly.",
+        img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800"
     },
     {
-        title: "Abandoned Space Station",
-        scenario: "A photo of an old Soviet-era control room covered in vines and dust.",
+        title: "Abandoned Shuttles",
+        scenario: "Two rusting Soviet-era space shuttles left in a massive decaying hangar.",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "Real",
-        evidence: "This is a real photo from the Baikonur Cosmodrome. The specific wear on the buttons is consistent with 50 years of decay.",
-        img: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=600"
+        evidence: "This is the Baikonur Cosmodrome. The specific way the rust flakes off the metal is a level of chaotic detail AI usually misses.",
+        img: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=800"
     },
     {
-        title: "The Arctic Protest",
-        scenario: "Activists holding a banner in the snow. The hands holding the banner have 6 fingers each.",
+        title: "The Arctic Traveler",
+        scenario: "A man walking through a heavy snowstorm. Is this a real photo from a researcher?",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
-        evidence: "The 'Six-Finger' rule. Even advanced AI still struggles with the complex anatomy of human extremities.",
-        img: "https://images.unsplash.com/photo-1478719059408-592965723cbc?auto=format&fit=crop&q=80&w=600"
+        evidence: "Logic Error: There are no footprints in the snow behind him, and the snowflakes are 'glowing' unnaturally.",
+        img: "https://images.unsplash.com/photo-1478719059408-592965723cbc?q=80&w=800"
     }
 ];
 
