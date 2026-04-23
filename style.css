@@ -179,9 +179,6 @@ h1 em { color: var(--primary); font-style: italic; }
     background: rgba(231, 76, 60, 0.18);
 }
 
-.correct-ans { background: rgba(46, 204, 113, 0.1); color: var(--success); border-left: 4px solid var(--success); display: block; }
-.wrong-ans { background: rgba(231, 76, 60, 0.1); color: var(--error); border-left: 4px solid var(--error); display: block; }
-
 /* Modal */
 .modal {
     position: fixed;
