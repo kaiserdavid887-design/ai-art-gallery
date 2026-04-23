@@ -141,6 +141,7 @@ h1 em { color: var(--primary); font-style: italic; }
 .option-btn:hover:not(:disabled) { background: var(--accent); }
 
 /* Feedback */
+/* Feedback */
 .feedback-box {
     margin-top: 15px;
     padding: 15px;
@@ -148,6 +149,35 @@ h1 em { color: var(--primary); font-style: italic; }
     font-size: 0.85rem;
     display: none;
     animation: fadeIn 0.5s;
+}
+
+.correct-ans {
+    background: rgba(46, 204, 113, 0.1);
+    color: var(--success);
+    border-left: 4px solid var(--success);
+    display: block;
+}
+
+.wrong-ans {
+    background: rgba(231, 76, 60, 0.1);
+    color: var(--error);
+    border-left: 4px solid var(--error);
+    display: block;
+}
+
+.option-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.correct-choice {
+    border: 1px solid rgba(46, 204, 113, 0.7);
+    background: rgba(46, 204, 113, 0.18);
+}
+
+.wrong-choice {
+    border: 1px solid rgba(231, 76, 60, 0.7);
+    background: rgba(231, 76, 60, 0.18);
 }
 
 .correct-ans { background: rgba(46, 204, 113, 0.1); color: var(--success); border-left: 4px solid var(--success); display: block; }
