@@ -29,7 +29,7 @@ const quizData = [
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
         evidence: "AI creates objects that look 'cool' but are physically impossible. There is no chain, pedal, or structural support shown.",
-        img: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=800"
+        img: "cyber-bicycle.jpg"
     },
     {
         title: "The Deep-Sea Discovery",
