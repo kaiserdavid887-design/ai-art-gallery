@@ -44,7 +44,7 @@ const quizData = [
         scenario: "Churchill, Roosevelt, and Stalin sitting together. The image is black and white with physical scratches.",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "Real",
-        evidence: "This is an authentic archival photo. AI struggles to replicate the specific chemical 'crackle' found in 80-year-old photos.",
+        evidence: "This is an authentic archival photo. AI struggles to replicate the specific chemical 'crackle' found in 80-year-old or older photos.",
         img: "https://upload.wikimedia.org/wikipedia/commons/1/15/Yalta_Conference_1945_Yalta_Hotel.jpg"
     },
     {
