@@ -113,12 +113,21 @@ window.handleChoice = (idx, choice) => {
     const item = quizData[idx];
     const feedback = document.getElementById(`feedback-${idx}`);
     const stack = document.getElementById(`stack-${idx}`);
-    
-    // Disable all buttons in this specific card so they can't click twice
-    const buttons = stack.querySelectorAll('button');
-    buttons.forEach(btn => btn.disabled = true);
-    
-    // Check if the choice matches the correct answer
+
+    const buttons = stack.querySelectorAll("button");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+
+        if (btn.textContent.trim() === item.correct) {
+            btn.classList.add("correct-choice");
+        }
+
+        if (btn.textContent.trim() === choice && choice !== item.correct) {
+            btn.classList.add("wrong-choice");
+        }
+    });
+
     if (choice === item.correct) {
         score++;
         feedback.innerHTML = `<strong>Correct!</strong> ${item.evidence}`;
