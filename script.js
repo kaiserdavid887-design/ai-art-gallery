@@ -37,7 +37,7 @@ const quizData = [
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
         evidence: "Look at the water foam. AI often makes water look like 'cotton candy' or static rather than flowing liquid.",
-        img: "https://images.unsplash.com/photo-1560273074-c930c70e1ad0?q=80&w=800"
+        img: "discovery.jpg"
     },
     {
         title: "Yalta Conference 1945",
