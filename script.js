@@ -5,7 +5,7 @@ const quizData = [
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
         evidence: "This was created using ChatGPT. Look at the blurry texture of the right hand",
-        img: "image/vatican-puffer.jpg"
+        img: "vatican-puffer.jpg"
     },
     {
         title: "2011 Japan Tsunami",
