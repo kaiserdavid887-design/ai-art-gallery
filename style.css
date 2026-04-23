@@ -267,7 +267,7 @@ h1 em { color: var(--primary); font-style: italic; }
 
 .comp-img {
     width: 100%;
-    height: 280px;
+    height: 180px;
     object-fit: cover;
     display: block;
 }
