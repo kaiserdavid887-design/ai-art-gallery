@@ -4,7 +4,7 @@ const quizData = [
         scenario: "The Pope wearing a designer white puffer jacket. Is this a rare candid moment?",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
-        evidence: "This was created using ChatGPT. Look at the blurry texture of the right hand and the impossible reflections on the glasses.",
+        evidence: "This was created using ChatGPT. Look at the blurry texture of the right hand",
         img: "image/vatican-puffer.jpg"
     },
     {
