@@ -5,7 +5,7 @@ const quizData = [
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
         evidence: "This was created using ChatGPT. Look at the blurry texture of the right hand and the impossible reflections on the glasses.",
-        img: "https://chatgpt.com/backend-api/estuary/content?id=file_0000000024347243b9d691145c2a9551&ts=493590&p=fs&cid=1&sig=f0555cc9b4166d1f70606abd46b68f43754ebc0c01834ce814f6d6c59460fb12&v=0"
+        img: "image/vatican-puffer.jpg"
     },
     {
         title: "2011 Japan Tsunami",
