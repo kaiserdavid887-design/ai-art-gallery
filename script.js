@@ -4,7 +4,7 @@ const quizData = [
         scenario: "The Pope wearing a designer white puffer jacket. Is this a rare candid moment?",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "AI Generated",
-        evidence: "This was created using Midjourney. Look at the blurry texture of the right hand and the impossible reflections on the glasses.",
+        evidence: "This was created using ChatGPT. Look at the blurry texture of the right hand and the impossible reflections on the glasses.",
         img: "https://chatgpt.com/backend-api/estuary/content?id=file_0000000024347243b9d691145c2a9551&ts=493590&p=fs&cid=1&sig=f0555cc9b4166d1f70606abd46b68f43754ebc0c01834ce814f6d6c59460fb12&v=0"
     },
     {
@@ -20,7 +20,7 @@ const quizData = [
         scenario: "A 1984 portrait. Notice the sharp grain and the distinct reflections in the green eyes.",
         options: ["AI Generated", "Real", "Misleading Context"],
         correct: "Real",
-        evidence: "This is Steve McCurry's famous photograph. The 'noise' in the photo comes from 35mm film, which is different from AI 'blur.'",
+        evidence: "This is Steve McCurry's famous photograph. The 'Afghan Girl' in the photo comes a work of art of his, which is different from AI 'blur.'",
         img: "https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg"
     },
     {
